@@ -7,81 +7,274 @@
     <title>STREETKINGS LOYAL GAME ZONES</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #1a1a1a;
+            color: white;
         }
         header {
-            background-color: #333;
-            color: white;
+            background-color: #222;
+            color: #f4f4f4;
             text-align: center;
             padding: 1em 0;
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #444;
+            background-color: #333;
         }
         nav a {
-            color: white;
+            color: #f4f4f4;
             padding: 1em;
             text-decoration: none;
         }
         nav a:hover {
-            background-color: #555;
+            background-color: #444;
         }
-        main {
+        section {
             padding: 2em;
+            text-align: center;
         }
         footer {
-            background-color: #333;
-            color: white;
+            background-color: #222;
             text-align: center;
             padding: 1em 0;
-            position: fixed;
-            width: 100%;
+            position: relative;
             bottom: 0;
+            width: 100%;
+        }
+        .game-category, .product-category {
+            margin: 2em 0;
+            text-align: left;
+        }
+        .game-list, .product-list {
+            display: inline-block;
+            max-width: 600px;
+        }
+        .game, .product {
+            margin: 1em 0;
+            border: 1px solid #444;
+            padding: 1em;
+            border-radius: 5px;
+            background-color: #333;
+        }
+        .badges {
+            margin-top: 0.5em;
+        }
+        .badge {
+            display: inline-block;
+            padding: 0.5em;
+            margin-right: 0.5em;
+            background-color: #f39c12;
+            color: white;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-
     <header>
-        <h1>STREETKINGS LOYAL GAME ZONES</h1>
-        <p>You won't see me, unless I wanna be seen, I'll stay to myself and mind my business, street king or uncharted is not just names or nicknames! But they possess its means. Toxicvinny is my favourite.</p>
+        <h1>Welcome to STREETKINGS LOYAL GAME ZONES</h1>
     </header>
-
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Games</a>
-        <a href="#">Products</a>
-        <a href="#">+255616412434</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#games">Games</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
     </nav>
+    <section id="home">
+        <h2>Home</h2>
+        <p>Join us in the ultimate gaming experience. Explore various game zones and meet other passionate gamers.</p>
+    </section>
+    <section id="about">
+        <h2>About</h2>
+        <p>STREETKINGS LOYAL GAME ZONES offers a wide range of games and community events to connect gamers and enhance your gaming skills.</p>
+    </section>
+    <section id="games">
+        <h2>Games</h2>
+        
+        <div class="game-category">
+            <h3>Popular Games</h3>
+            <div class="game-list">
+                <div class="game">
+                    <strong>Fortnite</strong>
+                    <p>A free-to-play battle royale game where 100 players compete to be the last one standing in a vibrant world.</p>
+                    <div class="badges">
+                        <span class="badge">Popular</span>
+                        <span class="badge">Multiplayer</span>
+                        <span class="badge">Free-to-Play</span>
+                    </div>
+                    <a href="https://www.epicgames.com/fortnite/en-US/home" target="_blank">Play for free</a>
+                </div>
+                <div class="game">
+                    <strong>Apex Legends</strong>
+                    <p>A squad-based battle royale game featuring unique characters with special abilities, set in the Titanfall universe.</p>
+                    <div class="badges">
+                        <span class="badge">Popular</span>
+                        <span class="badge">Multiplayer</span>
+                        <span class="badge">Free-to-Play</span>
+                    </div>
+                    <a href="https://www.ea.com/games/apex-legends" target="_blank">Play for free</a>
+                </div>
+                <div class="game">
+                    <strong>Among Us</strong>
+                    <p>A social deduction game where players work together to complete tasks while trying to figure out who the impostor is.</p>
+                    <div class="badges">
+                        <span class="badge">Multiplayer</span>
+                        <span class="badge">Social</span>
+                        <span class="badge">Free-to-Play (Mobile)</span>
+                    </div>
+                    <a href="https://www.innersloth.com/gameAmongUs.php" target="_blank">Play for free</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-category">
+            <h3>Oldest Games</h3>
+            <div class="game-list">
+                <div class="game">
+                    <strong>Pac-Man</strong>
+                    <p>The iconic arcade game where you navigate mazes, collect pellets, and avoid ghosts.</p>
+                    <div class="badges">
+                        <span class="badge">Classic</span>
+                        <span class="badge">Single Player</span>
+                    </div>
+                    <a href="https://archive.org/details/pacman" target="_blank">Play for free</a>
+                </div>
+                <div class="game">
+                    <strong>Tetris</strong>
+                    <p>A timeless puzzle game where players arrange falling blocks to create horizontal lines.</p>
+                    <div class="badges">
+                        <span class="badge">Classic</span>
+                        <span class="badge">Single Player</span>
+                    </div>
+                    <a href="https://tetris.com/play-tetris" target="_blank">Play for free</a>
+                </div>
+                <div class="game">
+                    <strong>Super Mario Bros.</strong>
+                    <p>A platform game where you jump through levels, defeat enemies, and rescue Princess Peach.</p>
+                    <div class="badges">
+                        <span class="badge">Classic</span>
+                        <span class="badge">Single Player</span>
+                    </div>
+                    <a href="https://playemulator.com/super-mario-bros/" target="_blank">Play for free</a>
+                </div>
+            </div>
+        </div>
 
-    <main>
-        <section>
-            <h2>Featured Games</h2>
-            <article>
-                <h3>Game Title</h3>
-                <p>Description of the game.</p>
-            </article>
-            <!-- Add more game articles as needed -->
-        </section>
-        <section>
-            <h2>Latest Products</h2>
-            <article>
-                <h3>Product Title</h3>
-                <p>Description of the product.</p>
-            </article>
-            <!-- Add more product articles as needed -->
-        </section>
-    </main>
+        <div class="game-category">
+            <h3>Latest Games</h3>
+            <div class="game-list">
+                <div class="game">
+                    <strong>Genshin Impact</strong>
+                    <p>An open-world action RPG with gacha mechanics, featuring a stunning world and intricate combat systems.</p>
+                    <div class="badges">
+                        <span class="badge">Latest</span>
+                        <span class="badge">Multiplayer</span>
+                        <span class="badge">Free-to-Play</span>
+                    </div>
+                    <a href="https://genshin.mihoyo.com/en" target="_blank">Play for free</a>
+                </div>
+                <div class="game">
+                    <strong>Call of Duty: Warzone</strong>
+                    <p>A free-to-play battle royale game set in the Call of Duty universe featuring large-scale combat and strategy.</p>
+                    <div class="badges">
+                        <span class="badge">Latest</span>
+                        <span class="badge">Multiplayer</span>
+                        <span class="badge">Free-to-Play</span>
+                    </div>
+                    <a href="https://www.callofduty.com/warzone" target="_blank">Play for free</a>
+                </div>
+                <div class="game">
+                    <strong>Valorant</strong>
+                    <p>A tactical first-person shooter where players take on the roles of agents, each with their unique abilities.</p>
+                    <div class="badges">
+                        <span class="badge">Latest</span>
+                        <span class="badge">Multiplayer</span>
+                        <span class="badge">Free-to-Play</span>
+                    </div>
+                    <a href="https://playvalorant.com/en-us/" target="_blank">Play for free</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="products">
+        <h2>Products</h2>
+        
+        <div class="product-category">
+            <h3>Popular Products</h3>
+            <div class="product-list">
+                <div class="product">
+                    <strong>Steam</strong>
+                    <p>A digital distribution platform that offers free games and demos; a hub for gaming enthusiasts.</p>
+                    <a href="https://store.steampowered.com/" target="_blank">Visit Steam</a>
+                </div>
+                <div class="product">
+                    <strong>Epic Games Store</strong>
+                    <p>Offers free games every week alongside many popular free-to-play titles.</p>
+                    <a href="https://www.epicgames.com/store/en-US/" target="_blank">Visit Epic Games Store</a>
+                </div>
+                <div class="product">
+                    <strong>Itch.io</strong>
+                    <p>A platform for indie games with many titles available for free download and play.</p>
+                    <a href="https://itch.io/" target="_blank">Visit Itch.io</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-category">
+            <h3>Oldest Products</h3>
+            <div class="product-list">
+                <div class="product">
+                    <strong>Emulators</strong>
+                    <p>Open-source emulators allow you to play classic games for free on your PC or browser.</p>
+                    <a href="https://www.emulatorgames.net/" target="_blank">Visit Emulator Games</a>
+                </div>
+                <div class="product">
+                    <strong>Free Game Archives</strong>
+                    <p>Access classic games for free through sites that preserve video game history.</p>
+                    <a href="https://archive.org/details/software" target="_blank">Visit Archive.org</a>
+                </div>
+                <div class="product">
+                    <strong>Open Source Games</strong>
+                    <p>Access various free and open-source games that you can download and play.</p>
+                    <a href="https://osgameclones.com/" target="_blank">Visit OSGameClones</a>
+                </div>
+            </div>
+        </div>
 
+        <div class="product-category">
+            <h3>Latest Products</h3>
+            <div class="product-list">
+                <div class="product">
+                    <strong>Game Jolt</strong>
+                    <p>A site where you can find indie games, many of which are available for free to play.</p>
+                    <a href="https://gamejolt.com/" target="_blank">Visit Game Jolt</a>
+                </div>
+                <div class="product">
+                    <strong>Mod DB</strong>
+                    <p>A source for user-generated game modifications, many available for free download.</p>
+                    <a href="https://www.moddb.com/" target="_blank">Visit Mod DB</a>
+                </div>
+                <div class="product">
+                    <strong>Kongregate</strong>
+                    <p>A site with a wide selection of free-to-play browser games across various genres.</p>
+                    <a href="https://www.kongregate.com/" target="_blank">Visit Kongregate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you have any questions, feel free to reach out to us through our social media or email.</p>
+    </section>
+    
     <footer>
-        <p>&copy; 2025 STREETKINGS LOYAL GAME ZONES. All rights reserved.</p>
+        <p>&copy; 2023 STREETKINGS LOYAL GAME ZONES</p>
     </footer>
-
 </body>
 </html>
 ```
