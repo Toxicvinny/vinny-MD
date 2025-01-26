@@ -5,32 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STREETKINGS LOYAL GAME ZONES</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #1a1a1a;
-            color: white;
+            color: #ffffff;
         }
         header {
             background-color: #222;
             color: #f4f4f4;
             text-align: center;
-            padding: 1em 0;
+            padding: 1.5em 0;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
         }
         nav {
             display: flex;
             justify-content: center;
             background-color: #333;
+            padding: 1em 0;
         }
         nav a {
             color: #f4f4f4;
             padding: 1em;
             text-decoration: none;
+            transition: background 0.3s;
         }
         nav a:hover {
             background-color: #444;
+        }
+        .icon {
+            margin-left: 15px;
+            color: #f4f4f4;
         }
         section {
             padding: 2em;
@@ -46,11 +57,11 @@
         }
         .game-category, .product-category {
             margin: 2em 0;
-            text-align: left;
         }
         .game-list, .product-list {
             display: inline-block;
             max-width: 600px;
+            text-align: left;
         }
         .game, .product {
             margin: 1em 0;
@@ -58,6 +69,10 @@
             padding: 1em;
             border-radius: 5px;
             background-color: #333;
+            transition: transform 0.3s;
+        }
+        .game:hover, .product:hover {
+            transform: scale(1.02);
         }
         .badges {
             margin-top: 0.5em;
@@ -69,12 +84,28 @@
             background-color: #f39c12;
             color: white;
             border-radius: 5px;
+            font-size: 0.9em;
+        }
+        /* Icons in header */
+        .header-icons {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+        .header-icons i {
+            margin-left: 15px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Welcome to STREETKINGS LOYAL GAME ZONES</h1>
+        <div class="header-icons">
+            <i class="fas fa-search icon" title="Search"></i>
+            <i class="fas fa-user icon" title="Login"></i>
+            <i class="fas fa-sign-out-alt icon" title="Logout"></i>
+        </div>
     </header>
     <nav>
         <a href="#home">Home</a>
@@ -95,7 +126,7 @@
         <h2>Games</h2>
         
         <div class="game-category">
-            <h3>Popular Games</h3>
+            <h3 style="color: #f39c12;">Popular Games</h3>
             <div class="game-list">
                 <div class="game">
                     <strong>Fortnite</strong>
@@ -131,7 +162,7 @@
         </div>
         
         <div class="game-category">
-            <h3>Oldest Games</h3>
+            <h3 style="color: #f39c12;">Oldest Games</h3>
             <div class="game-list">
                 <div class="game">
                     <strong>Pac-Man</strong>
@@ -164,7 +195,7 @@
         </div>
 
         <div class="game-category">
-            <h3>Latest Games</h3>
+            <h3 style="color: #f39c12;">Latest Games</h3>
             <div class="game-list">
                 <div class="game">
                     <strong>Genshin Impact</strong>
@@ -204,7 +235,7 @@
         <h2>Products</h2>
         
         <div class="product-category">
-            <h3>Popular Products</h3>
+            <h3 style="color: #f39c12;">Popular Products</h3>
             <div class="product-list">
                 <div class="product">
                     <strong>Steam</strong>
@@ -225,7 +256,7 @@
         </div>
         
         <div class="product-category">
-            <h3>Oldest Products</h3>
+            <h3 style="color: #f39c12;">Oldest Products</h3>
             <div class="product-list">
                 <div class="product">
                     <strong>Emulators</strong>
@@ -246,7 +277,7 @@
         </div>
 
         <div class="product-category">
-            <h3>Latest Products</h3>
+            <h3 style="color: #f39c12;">Latest Products</h3>
             <div class="product-list">
                 <div class="product">
                     <strong>Game Jolt</strong>
@@ -273,7 +304,7 @@
     </section>
     
     <footer>
-        <p>&copy; 2023 STREETKINGS LOYAL GAME ZONES</p>
+        <p>&copy; 2025 STREETKINGS LOYAL GAME ZONES</p>
     </footer>
 </body>
 </html>
