@@ -44,15 +44,15 @@
             bottom: 0;
             width: 100%;
         }
-        .game-category, .product-category {
+        .game-category, .product-category, .news-section, .reviews-section {
             margin: 2em 0;
             text-align: left;
         }
-        .game-list, .product-list {
+        .game-list, .product-list, .news-list, .review-list {
             display: inline-block;
             max-width: 600px;
         }
-        .game, .product {
+        .game, .product, .news-item, .review {
             margin: 1em 0;
             border: 1px solid #444;
             padding: 1em;
@@ -70,6 +70,28 @@
             color: white;
             border-radius: 5px;
         }
+        .leaderboard {
+            margin-top: 2em;
+            text-align: center;
+        }
+        .leaderboard h3 {
+            margin-bottom: 0.5em;
+        }
+        .leaderboard-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .leaderboard-table th, .leaderboard-table td {
+            border: 1px solid #444;
+            padding: 0.5em;
+            text-align: center;
+        }
+        .reviews-section {
+            margin-top: 2em;
+        }
+        .review-input {
+            margin-top: 1em;
+        }
     </style>
 </head>
 <body>
@@ -81,6 +103,8 @@
         <a href="#about">About</a>
         <a href="#games">Games</a>
         <a href="#products">Products</a>
+        <a href="#news">News</a>
+        <a href="#reviews">Reviews</a>
         <a href="#contact">Contact</a>
     </nav>
     <section id="home">
@@ -105,7 +129,6 @@
                         <span class="badge">Multiplayer</span>
                         <span class="badge">Free-to-Play</span>
                     </div>
-                    <p><strong>Interesting Fact:</strong> Fortnite has hosted concerts and events that attracted millions of players globally!</p>
                     <a href="https://www.epicgames.com/fortnite/en-US/home" target="_blank">Play for free</a>
                 </div>
                 <div class="game">
@@ -116,7 +139,6 @@
                         <span class="badge">Multiplayer</span>
                         <span class="badge">Free-to-Play</span>
                     </div>
-                    <p><strong>Interesting Fact:</strong> Apex Legends was surprise-launched and gained 25 million players in its first week!</p>
                     <a href="https://www.ea.com/games/apex-legends" target="_blank">Play for free</a>
                 </div>
                 <div class="game">
@@ -127,7 +149,6 @@
                         <span class="badge">Social</span>
                         <span class="badge">Free-to-Play (Mobile)</span>
                     </div>
-                    <p><strong>Interesting Fact:</strong> The game surged in popularity during the pandemic, becoming a social phenomenon!</p>
                     <a href="https://www.innersloth.com/gameAmongUs.php" target="_blank">Play for free</a>
                 </div>
             </div>
@@ -143,7 +164,6 @@
                         <span class="badge">Classic</span>
                         <span class="badge">Single Player</span>
                     </div>
-                    <p><strong>Interesting Fact:</strong> Pac-Man was one of the first video games to feature a character, making it a cultural icon!</p>
                     <a href="https://archive.org/details/pacman" target="_blank">Play for free</a>
                 </div>
                 <div class="game">
@@ -153,7 +173,6 @@
                         <span class="badge">Classic</span>
                         <span class="badge">Single Player</span>
                     </div>
-                    <p><strong>Interesting Fact:</strong> Tetris is considered one of the greatest video games of all time and has been featured in competitive tournaments!</p>
                     <a href="https://tetris.com/play-tetris" target="_blank">Play for free</a>
                 </div>
                 <div class="game">
@@ -163,7 +182,6 @@
                         <span class="badge">Classic</span>
                         <span class="badge">Single Player</span>
                     </div>
-                    <p><strong>Interesting Fact:</strong> Super Mario Bros. set the standard for platform games and has sold over 40 million copies worldwide!</p>
                     <a href="https://playemulator.com/super-mario-bros/" target="_blank">Play for free</a>
                 </div>
             </div>
@@ -180,7 +198,6 @@
                         <span class="badge">Multiplayer</span>
                         <span class="badge">Free-to-Play</span>
                     </div>
-                    <p><strong>Interesting Fact:</strong> Genshin Impact features a vibrant anime-like art style and a vast world to explore!</p>
                     <a href="https://genshin.mihoyo.com/en" target="_blank">Play for free</a>
                 </div>
                 <div class="game">
@@ -191,7 +208,6 @@
                         <span class="badge">Multiplayer</span>
                         <span class="badge">Free-to-Play</span>
                     </div>
-                    <p><strong>Interesting Fact:</strong> Warzone features a unique Gulag mechanic where players fight for a second chance after being downed!</p>
                     <a href="https://www.callofduty.com/warzone" target="_blank">Play for free</a>
                 </div>
                 <div class="game">
@@ -202,13 +218,46 @@
                         <span class="badge">Multiplayer</span>
                         <span class="badge">Free-to-Play</span>
                     </div>
-                    <p><strong>Interesting Fact:</strong> Valorant combines character abilities with traditional gunplay found in classic FPS games.</p>
                     <a href="https://playvalorant.com/en-us/" target="_blank">Play for free</a>
                 </div>
             </div>
         </div>
+
+        <div class="leaderboard">
+            <h3>Leaderboard / Hall of Fame</h3>
+            <table class="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Player</th>
+                        <th>Score</th>
+                        <th>Game</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>@toxic_vinny360</td>
+                        <td>1,250</td>
+                        <td>Fortnite</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>@VadePryce</td>
+                        <td>1,200</td>
+                        <td>Apex Legends</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>@gamer123</td>
+                        <td>1,175</td>
+                        <td>Valorant</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
-    
+
     <section id="products">
         <h2>Products</h2>
         
@@ -276,13 +325,54 @@
         </div>
     </section>
 
+    <section id="news">
+        <h2>News</h2>
+        <div class="news-section">
+            <h3>Latest Updates:</h3>
+            <div class="news-list">
+                <div class="news-item">
+                    <strong>Fortnite</strong>: New season launches with exciting updates! [Date: MM/DD/YYYY]
+                </div>
+                <div class="news-item">
+                    <strong>Apex Legends</strong>: New legend added to the roster! [Date: MM/DD/YYYY]
+                </div>
+                <div class="news-item">
+                    <strong>Genshin Impact</strong>: Version 3.0 released with new characters and events! [Date: MM/DD/YYYY]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h2>User Reviews and Ratings</h2>
+        <div class="reviews-section">
+            <h3>Submit Your Review:</h3>
+            <form id="review-form" class="review-input">
+                <input type="text" placeholder="Your Name" required>
+                <textarea placeholder="Write your review..." required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+                <h3>Reviews:</h3>
+                <div class="review-list">
+                    <div class="review">
+                        <strong>User1234:</strong>
+                        <p>Fortnite is an amazing game! The graphics and gameplay are fantastic!</p>
+                    </div>
+                    <div class="review">
+                        <strong>GamerGal:</strong>
+                        <p>Apex Legends brings so much excitement. I love the characters!</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+
     <section id="contact">
         <h2>Contact</h2>
         <p>If you have any questions, feel free to reach out to us through our social media or email.</p>
     </section>
     
     <footer>
-        <p>&copy; 2023 STREETKINGS LOYAL GAME ZONES</p>
+        <p>&copy; 2025 STREETKINGS LOYAL GAME ZONES</p>
     </footer>
 </body>
 </html>
